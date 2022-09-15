@@ -20,8 +20,8 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
   1. Download the **Zip** file or clone the repo with: ```bash git clone [https://github.com/Tadessejemal1/Bookstore.git/)
-  2.  ``` To access cloned directory run: ```bash cd/Bookstore``` 
-  3. Open it with the live server onthe terminal write npm start
+  2.  ``` To access cloned directory run: ``bash cd/Bookstore``
+  3. Open it with the live server on the terminal write npm start
 
 ### Usage
   - First you would clone the repository in the local computer.
