@@ -1,18 +1,19 @@
 import React from 'react';
-import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
-
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import NavBar from './Components/NavBar';
 import './App.css';
-import Catagories from './Pages/Catagories';
-import Home from './Pages/Home';
+import Categories from './Components/Categories';
+import BookStoreContainer from './Components/BookStoreContainer';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
+      <NavBar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/catagories" element={<Catagories />} />
+        <Route exact path="/" element={<BookStoreContainer />} />
+        <Route exact path="/categories" element={<Categories />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 

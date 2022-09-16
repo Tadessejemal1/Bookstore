@@ -1,3 +1,5 @@
+import React from 'react';
+
 const BookStore = () => (
   <div className="book-list">
     <h2>BooksList</h2>
