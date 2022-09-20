@@ -7,7 +7,7 @@ const BookStore = () => {
   return (
     <div className="book-list">
       <h2>BooksList</h2>
-      { books?.map((book) => <Book key={book.id} book={book} />) }
+      { books?.map((book) => <Book key={book.id} book={book} />)}
     </div>
   );
 };
