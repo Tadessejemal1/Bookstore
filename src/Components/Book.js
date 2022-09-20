@@ -22,6 +22,7 @@ const Book = ({ book }) => {
         <button type="button">Edit</button>
       </div>
       <div className="progress-container">
+        <p>PROGRESS %</p>
         <p>{book.progress}</p>
       </div>
       <div className="current-chapter">
