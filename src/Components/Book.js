@@ -16,6 +16,7 @@ const Book = ({ book }) => {
         <p>category</p>
         <h3>{book.title}</h3>
         <p>{book.author}</p>
+        <p>{book.categories}</p>
         <button type="button">Comments</button>
         <button type="button" id={book.id} onClick={deleteBook}>Remove</button>
         <button type="button">Edit</button>
@@ -37,6 +38,7 @@ Book.propTypes = {
     id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
+    categories: PropTypes.string.isRequired,
   }).isRequired,
 };
 
