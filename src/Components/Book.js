@@ -22,11 +22,12 @@ const Book = ({ book }) => {
         <button type="button">Edit</button>
       </div>
       <div className="progress-container">
-        <p>64% completed</p>
+        <p>PROGRESS %</p>
+        <p>{book.progress}</p>
       </div>
       <div className="current-chapter">
         <p>CURRENT CHAPTER</p>
-        <p>Chapter 15</p>
+        <p>{book.chapter}</p>
         <button type="button">Update Progress</button>
       </div>
     </div>
@@ -39,6 +40,8 @@ Book.propTypes = {
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
     categories: PropTypes.string.isRequired,
+    progress: PropTypes.string.isRequired,
+    chapter: PropTypes.string.isRequired,
   }).isRequired,
 };
 

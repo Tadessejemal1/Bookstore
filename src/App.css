@@ -51,23 +51,32 @@ body {
 }
 
 #book-title {
-  width: 600px;
+  width: 300px;
   height: 30px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 #category {
-  width: 200px;
-  margin-right: 20px;
+  margin-right: 10px;
   height: 30px;
 }
 
 #book-categories {
   height: 30px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 #book-author {
   height: 30px;
-  margin-right: 20px;
+  margin-right: 10px;
+}
+
+#book-progress {
+  height: 30px;
+  margin-right: 10px;
+}
+
+#book-chapter {
+  height: 30px;
+  margin-right: 10px;
 }

@@ -9,13 +9,17 @@ const InputForm = () => {
   const submitBook = (e) => {
     e.preventDefault();
 
-    const { title, author, categories } = e.target.elements;
+    const {
+      title, author, categories, progress, chapter,
+    } = e.target.elements;
 
     const newBook = {
       id: uuid(),
       title: title.value,
       author: author.value,
       categories: categories.value,
+      progress: progress.value,
+      chapter: chapter.value,
     };
     e.target.reset();
 
@@ -27,6 +31,8 @@ const InputForm = () => {
       <input type="text" name="title" id="book-title" placeholder="title" required />
       <input type="text" name="author" id="book-author" placeholder="author" required />
       <input type="text" name="categories" id="book-categories" placeholder="categories" required />
+      <input type="text" name="progress" id="book-progress" placeholder="progress" required />
+      <input type="text" name="chapter" id="book-chapter" placeholder="chapter" required />
       <input type="submit" value="ADD BOOK" />
     </form>
   );
