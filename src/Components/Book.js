@@ -1,13 +1,13 @@
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { removeBook } from '../redux/Books/Books';
+import { removeBookFetch } from '../redux/Books/Books';
 
 const Book = ({ book }) => {
   const dispatch = useDispatch();
 
   const deleteBook = (e) => {
     const { id } = e.target;
-    dispatch(removeBook({ id }));
+    dispatch(removeBookFetch({ id }));
   };
 
   return (
@@ -23,11 +23,11 @@ const Book = ({ book }) => {
       </div>
       <div className="progress-container">
         <p>PROGRESS %</p>
-        <p>{book.progress}</p>
+        <p>progress</p>
       </div>
       <div className="current-chapter">
         <p>CURRENT CHAPTER</p>
-        <p>{book.chapter}</p>
+        <p>chapter</p>
         <button type="button">Update Progress</button>
       </div>
     </div>
@@ -40,8 +40,6 @@ Book.propTypes = {
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
     categories: PropTypes.string.isRequired,
-    progress: PropTypes.string.isRequired,
-    chapter: PropTypes.string.isRequired,
   }).isRequired,
 };
 
