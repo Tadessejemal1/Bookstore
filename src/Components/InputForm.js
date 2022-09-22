@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { v4 as uuid } from 'uuid';
-
+import genres from '../categoryGeneral/inputCategories';
 import { addBookFetch } from '../redux/Books/Books';
 
 const InputForm = () => {
@@ -9,12 +9,11 @@ const InputForm = () => {
   const submitBook = (e) => {
     e.preventDefault();
 
-    const { title, author, categories } = e.target.elements;
+    const { title, categories } = e.target.elements;
 
     const newBook = {
       id: uuid(),
       title: title.value,
-      author: author.value,
       categories: categories.value,
     };
     e.target.reset();
@@ -23,12 +22,20 @@ const InputForm = () => {
   };
 
   return (
-    <form onSubmit={submitBook} className="form-add-book">
-      <input type="text" name="title" id="book-title" placeholder="title" required />
-      <input type="text" name="author" id="book-author" placeholder="author" required />
-      <input type="text" name="categories" id="book-categories" placeholder="categories" required />
-      <input type="submit" value="ADD BOOK" />
-    </form>
+    <div className="add-book-container">
+      <hr className="add-book-separator" />
+      <h2 className="add-book-section-title">Add New Book</h2>
+      <form onSubmit={submitBook} className="form-add-book">
+        <input type="text" name="title" id="book-title" placeholder="title" required />
+        <select name="categories" id="category">
+          <option className="select-placeholder" hidden>Categories</option>
+          {
+              genres.map((genre) => <option key={genre} value={genre}>{genre}</option>)
+            }
+        </select>
+        <input type="submit" className="btn-submit" value="ADD BOOK" />
+      </form>
+    </div>
   );
 };
 
