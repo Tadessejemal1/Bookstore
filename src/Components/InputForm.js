@@ -9,7 +9,7 @@ const InputForm = () => {
   const submitBook = (e) => {
     e.preventDefault();
 
-    const { title, categories } = e.target.elements;
+    const { categories, title } = e.target.elements;
 
     const newBook = {
       id: uuid(),
@@ -27,7 +27,7 @@ const InputForm = () => {
       <h2 className="add-book-section-title">Add New Book</h2>
       <form onSubmit={submitBook} className="form-add-book">
         <input type="text" name="title" id="book-title" placeholder="title" required />
-        <select name="categories" id="category">
+        <select name="categories" id="categories">
           <option className="select-placeholder" hidden>Categories</option>
           {
               genres.map((genre) => <option key={genre} value={genre}>{genre}</option>)

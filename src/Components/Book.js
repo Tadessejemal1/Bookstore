@@ -16,7 +16,7 @@ const Book = ({ book }) => {
   return (
     <div className="book">
       <div className="book-detail">
-        <p className="book-category">{book.categories}</p>
+        <p className="book-categories">{book.categories}</p>
         <p className="book-title">{book.title}</p>
         <p className="book-author">{book.author || 'John Doe'}</p>
         <button className="btn-comments" type="button">Comments</button>

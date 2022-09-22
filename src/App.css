@@ -114,7 +114,7 @@ h2 {
   color: var(--black-two);
 }
 
-.book-category {
+.book-categories {
   font-weight: bold;
   font-size: 0.875rem;
   margin: 0 2.438rem 0 0;
@@ -313,7 +313,7 @@ h2 {
   color: var(--black-two);
 }
 
-.form-add-book #category {
+.form-add-book #categories {
   width: 20%;
   border-radius: 4px;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
