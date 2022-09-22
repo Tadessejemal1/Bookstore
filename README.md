@@ -5,7 +5,7 @@
    - Add a book.
    - Remove a selected book.
 ## Live Demo
-[click me](https://stellar-heliotrope-63c64a.netlify.app/)
+[click me](https://stellar-heliotrope-63c64a.netlify.app)
 ## Built With
 
 - HTML, CSS, JavaScript, React
