@@ -4,6 +4,8 @@
    - Display a list of books.
    - Add a book.
    - Remove a selected book.
+## Live Demo
+[click me](https://stellar-heliotrope-63c64a.netlify.app/)
 ## Built With
 
 - HTML, CSS, JavaScript, React
@@ -40,7 +42,5 @@ To get a local copy up and running follow these simple example steps.
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
-
-## Live Demo
 
 ## Show your support
