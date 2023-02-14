@@ -1,7 +1,7 @@
 {
   "name": "BookStore",
   "version": "0.1.0",
-  "homepage": "https://Tadessejemal1.github.io/Bookstore",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
